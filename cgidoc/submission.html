@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+    Design by Free CSS Templates
+    http://www.freecsstemplates.org
+    Released for free under a Creative Commons Attribution 2.5 License
+    
+    Name       : Premium Series
+    Description: A three-column, fixed-width blog design.
+    Version    : 1.0
+    Released   : 20090303
+    
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SubMitoPred</title>
+    <meta name="keywords" content="" />
+    <meta name="Premium Series" content="" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+  </head>
+  <body>
+    <!-- start header -->
+    <div id="header">
+      <div id="logo">
+	<h1><a href="index.html"><span>SubMitoPred</span></a></h1>
+	<p>A webserver for submitochondrial protein prediction</p>
+      </div>
+      <div id="menu">
+	<ul id="main">
+	  <li class="current_page_item"><a href="index.html">Homepage</a></li>
+	  <li><a href="submission.html">Submission</a></li>
+	  <li><a href="help.html">Help</a></li>
+	  <li><a href="algo.html">Algorithm</a></li>
+	  <li><a href="download.html">Downloads</a></li>
+	  <li><a href="team.html">Developers</a></li>
+	  <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+      </div>
+    </div>
+    <!-- end header -->
+    <div id="wrapper">
+      <!-- start page -->
+      <div id="page">
+	<!-- start content -->
+	<div id="content">
+	  <div class="post">
+	    <div class="entry">
+	      <h1><span>Submit Query Sequence</span></h1>
+	      <FORM ACTION ="/cgi-bin/submitopred/valid.pl" ENCTYPE="multipart/form-data" METHOD="post">
+		<P><b> Sequence(s):</b> (Type/paste your sequences in FASTA format)</p>
+		<p><b> Note: </b> User can submit only 25 sequences at a time.
+		  <b>If more than 25 sequences are submitted, it will process only first 25 sequences.</b></p>
+		<p><TEXTAREA ROWS="10" COLS="60" NAME="atom"></TEXTAREA></P>
+		<P> <font color = "red" ><blink> OR</blink> </font><span>Upload FASTA file </span><INPUT TYPE = "FILE" name="file"> </P>
+		<P><span> SVM threshold:</span>
+		  <SELECT name="svm_th">
+		    <OPTION value="-1"> -1.0
+		    <OPTION value="-.9"> -0.9
+		    <OPTION value="-.8"> -0.8
+		    <OPTION value="-.7"> -0.7
+		    <OPTION value="-.6"> -0.6
+		    <OPTION value="-.5"> -0.5
+		    <OPTION value="-.4"> -0.4
+		    <OPTION value="-.3"> -0.3
+		    <OPTION value="-.2"> -0.2
+		    <OPTION value="-.1"> -0.1
+		    <OPTION SELECTED value="0.0">0.0
+		    <OPTION value=".1"> 0.1
+		    <OPTION value=".2">0.2
+		    <OPTION value=".3">0.3
+		    <OPTION value=".4">0.4
+		    <OPTION value=".5">0.5
+		    <OPTION value=".6">0.6
+		    <OPTION value=".7">0.7
+		    <OPTION value=".8">0.8
+		    <OPTION value=".9">0.9
+		    <OPTION value="1.0"> 1.0
+		    </SELECT>
+		    </P>
+		      <p><b>Note:</b> <font color = "red" > If user select high threshold, the false positive prediction will be low and if the user select low threshold, the false positive prediction will be high. </font> </p>
+		      <P ALIGN = "CENTER"><INPUT TYPE = "SUBMIT" VALUE = "Run Prediction"><INPUT TYPE = "RESET" VALUE = "Clear"></P>
+			</FORM>
+			<br><br><Br><br>
+			      </div>
+			    </div>
+			  </div>
+			  <!-- end content -->
+			  <div style="clear: both;">&nbsp;</div>
+			</div>
+			<!-- end page -->
+		      </div>
+		      <div id="footer">
+			<li><a href="../../webservers.html">Other Servers & Databases of our Group</a></li>
+			<li><a href="http://du.ac.in">University of Delhi</a></li>
+			<li><a href="http://south.du.ac.in">University of Delhi South Campus</a></li>
+		      </div>
+		    </body>
+		    </html>
+		    

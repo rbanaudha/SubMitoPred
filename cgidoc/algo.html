@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+    Design by Free CSS Templates
+    http://www.freecsstemplates.org
+    Released for free under a Creative Commons Attribution 2.5 License
+    
+    Name       : Premium Series
+    Description: A three-column, fixed-width blog design.
+    Version    : 1.0
+    Released   : 20090303
+    
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SubMitoPred</title>
+    <meta name="keywords" content="" />
+    <meta name="Premium Series" content="" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+  </head>
+  <body>
+    <!-- start header -->
+    <div id="header">
+      <div id="logo">
+	<h1><a href="#"><span>SubMitoPred</span></a></h1>
+	<p>A webserver for submitochondrial protein prediction</p>
+      </div>
+      <div id="menu">
+	<ul id="main">
+	  <li class="current_page_item"><a href="index.html">Homepage</a></li>
+	  <li><a href="submission.html">Submission</a></li>
+	  <li><a href="help.html">Help</a></li>
+	  <li><a href="algo.html">Algorithm</a></li>
+	  <li><a href="download.html">Downloads</a></li>
+	  <li><a href="team.html">Developers</a></li>
+	  <li><a href="contact.html">Contact Us</a></li>
+	</ul>
+      </div>
+    </div>
+    <!-- end header -->
+    <div id="wrapper">
+      <!-- start page -->
+      <div id="page">
+	<!-- start content -->
+	<div id="content">
+	  <div class="post">
+	    <h1 class="title"><a>How it Works</a></h1>
+	    <div class="entry">
+	      <strong>SumMitoPred</strong> is a combined method of Pfam domain information and support vector machine (SVM) based predictor. In this method, first our predictor search unique Pfam domain for mitochondrial and non-mitochondrial proteins at first level, if it found non-mitochondrial unique domain, it predict query as non-mitochondria and if it found mitochondrial unique domains, it moves to second level. Here one more condition is that if it does not found any unique domain, it calculate N-terminal and remaining amino acid composition and predict according to SVM score (if SVM score is less than threshold, predict as non-mitochondria if SVM score greater than threshold, predict as mitochondria and move to second level).<br>
+At second level, it again search unique domain for sub-mitochondrial location, if present, it predict the same location from where the unique domain belongs and if not, it predict location which have maximum SVM score. Figure 1 shows the overall architecture of SubMitoPred.
+<br><br>
+	    </div>
+<div>
+  <table align='center' width='100%'><tr border='2'><td><a><img align="center" border="1" src="images/algo.png" width="700" height="510"</td></a></tr></table>
+<br><b>Figure 1.</b> Flow diagram of SubMitoPred.<br><br>
+</div>
+  </div>
+	</div>
+	<!-- end content -->
+	<div style="clear: both;">&nbsp;</div>
+      </div>
+      <!-- end page -->
+    </div>
+    <div id="footer">
+      <li><a href="../../webservers.html">Other Servers & Databases of our Group</a></li>
+      <li><a href="http://du.ac.in">University of Delhi</a></li>
+      <li><a href="http://south.du.ac.in">University of Delhi South Campus</a></li>
+    </div>
+  </body>
+</html>

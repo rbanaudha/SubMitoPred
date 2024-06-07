@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+    Design by Free CSS Templates
+    http://www.freecsstemplates.org
+    Released for free under a Creative Commons Attribution 2.5 License
+    
+    Name       : Premium Series
+    Description: A three-column, fixed-width blog design.
+    Version    : 1.0
+    Released   : 20090303
+    
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>SubMitoPred</title>
+    <meta name="keywords" content="" />
+    <meta name="Premium Series" content="" />
+    <link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+  </head>
+  <body>
+    <!-- start header -->
+    <div id="header">
+      <div id="logo">
+	<h1><a href="#"><span>SubMitoPred</span></a></h1>
+	<p>A webserver for submitochondrial protein prediction</p>
+      </div>
+      <div id="menu">
+	<ul id="main">
+	  <li class="current_page_item"><a href="index.html">Homepage</a></li>
+	  <li><a href="submission.html">Submission</a></li>
+	  <li><a href="help.html">Help</a></li>
+	  <li><a href="algo.html">Algorithm</a></li>
+	  <li><a href="download.html">Downloads</a></li>
+	  <li><a href="team.html">Developers</a></li>
+	  <li><a href="contact.html">Contact Us</a></li>
+	</ul>
+      </div>
+    </div>
+    <!-- end header -->
+    <div id="wrapper">
+      <!-- start page -->
+      <div id="page">
+	<!-- start content -->
+	<div id="content">
+	  <div class="post">
+	    <h1 class="title"><a>How to Use</a></h1>
+	    <div class="entry">
+	      <strong>Query Sequence(s)</strong><br>SubMitoPred process only protein sequence file in fasta format. User have option to cut and paste in the text box or directly upload the sequence file. The limits of SubMitoPred is upto 25 sequences at a time. If user submit more than 25 sequences, SubMitoPred predict only first 25 sequences. Following figure 1 is an example showing how to submit a query in SubMitoPred.</br>
+	      <p><b>SVM Threshold Value</b><br>User also have the option to set the threshold. If user select high threshold, the number of prediction will be low but rate of false positive prediction will also be low. If the user select low threshold, the number of prediction will be high and the false positive prediction will also be high.</p>
+		<p><b>Example Sequence</b><br>>sp|Q16891|MIC60_HUMAN MICOS complex subunit MIC60 OS=Homo sapiens GN=IMMT PE=1 SV=1<br>
+MLRACQLSGVTAAAQSCLCGKFVLRPLRPCRRYSTSGSSGLTTGKIAGAGLLFVGGGIGG<br>
+TILYAKWDSHFRESVEKTIPYSDKLFEMVLGPAAYNVPLPKKSIQSGPLKISSVSEVMKE<br>
+SKQPASQLQKQKGDTPASATAPTEAAQIISAAGDTLSVPAPAVQPEESLKTDHPEIGEGK<br>
+PTPALSEEASSSSIRERPPEEVAARLAQQEKQEQVKIESLAKSLEDALRQTASVTLQAIA<br>
+AQNAAVQAVNAHSNILKAAMDNSEIAGEKKSAQWRTVEGALKERRKAVDEAADALLKAKE<br>
+ELEKMKSVIENAKKKEVAGAKPHITAAEGKLHNMIVDLDNVVKKVQAAQSEAKVVSQYHE<br>
+LVVQARDDFKRELDSITPEVLPGWKGMSVSDLADKLSTDDLNSLIAHAHRRIDQLNRELA<br>
+EQKATEKQHITLALEKQKLEEKRAFDSAVAKALEHHRSEIQAEQDRKIEEVRDAMENEMR<br>
+TQLRRQAAAHTDHLRDVLRVQEQELKSEFEQNLSEKLSEQELQFRRLSQEQVDNFTLDIN<br>
+TAYARLRGIEQAVQSHAVAEEEARKAHQLWLSVEALKYSMKTSSAETPTIPLGSAVEAIK<br>
+ANCSDNEFTQALTAAIPPESLTRGVYSEETLRARFYAVQKLARRVAMIDETRNSLYQYFL<br>
+SYLQSLLLFPPQQLKPPPELCPEDINTFKLLSYASYCIEHGDLELAAKFVNQLKGESRRV<br>
+AQDWLKEARMTLETKQIVEILTAYASAVGIGTTQVQPE<br>
+>sp|P85799|PROH2_APIME Prohormone-2 OS=Apis mellifera PE=1 SV=1<br>
+MMCDWVWLLLTLCSLLMIVQSLPTNLAEDTKKTEQTMRPKSKRAQEMLMFGNQQNHQPEN<br>
+NPSSSYSSTAEKRTLAASGLGGLKAALIEEEKPSRSNTLNNAFYDRKNYDYGAVNELGYE<br>
+IPQVWDNSPYSRYYTNEDRRKRSEKSAVASGSSTTIKPSTTSFQSPTSTQQSVQTQVKRN<br>
+VPIYQEPRFKRELDIDPEDVLTLLSLWENERRKRNWHKYMNEEYENVDDEDNLLEEEDSR<br>
+NIIPWMDSSVYPPRHYSLDSLSPSDIGIIRTHPSSYYEQYENQYGQQYDTSQYGSPQYGL<br>
+VYPQQTYYSAPEKRFMISRKRSQAYDPYSNAAQFQLSSQSRGYPYQHRLVY<br>
+>sp|Q8IVP5|FUND1_HUMAN FUN14 domain-containing protein 1 OS=Homo sapiens GN=FUNDC1 PE=1 SV=1<br>
+MATRNPPPQDYESDDDSYEVLDLTEYARRHQWWNRVFGHSSGPMVEKYSVATQIVMGGVT<br>
+GWCAGFLFQKVGKLAATAVGGGFLLLQIASHSGYVQIDWKRVEKDVNKAKRQIKKRANKA<br>
+APEINNLIEEATEFIKQNIVISSGFVGGFLLGLAS<br>
+</p>
+	    </div>
+<div>
+  <table align='center' width='100%'><tr border='2'><td><a><img align="center" border="1" src="images/subpage.png" width="600" height="410"</td></a></tr></table>
+<br><b>Figure 1.</b> SubMitoPred submission page showing how to insert input sequences.<br><br>
+</div>
+    <div>
+      <p><b>Prediction Result</b><br>In response to the submitted protein sequence(s), SubMitoPred generates the prediction result in tabular form. We also provide a job number, if user have any query regarding their result, he/she can contact us. Here is a sample of prediction done in response to query sequences (Figure 2).</p>
+    </div>
+      <div>
+	<table align='center' width='100%'><tr border='2'><td><a><img align="center" border="1" src="images/result.png" width="600" height="310"</td></a></tr></table>
+								      <br><b>Figure 2.</b> Screenshot of SubMitoPred prediction result.<br><br>
+    </div>
+	  </div>
+	</div>
+	<!-- end content -->
+	<div style="clear: both;">&nbsp;</div>
+      </div>
+      <!-- end page -->
+    </div>
+    <div id="footer">
+      <li><a href="../../webservers.html">Other Servers & Databases of our Group</a></li>
+      <li><a href="http://du.ac.in">University of Delhi</a></li>
+      <li><a href="http://south.du.ac.in">University of Delhi South Campus</a></li>
+    </div>
+  </body>
+</html>
